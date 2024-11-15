@@ -22,8 +22,9 @@ svg {
 
 .heading {
     font-family: jfk;
-    max-width: 8em;
-    font-size: 8em;
+    width: 100%;
+    padding-inline: 0.4rem;
+    font-size: 6em;
     text-align: center;
     z-index: 2;
     /* animation: jello-slide 2s ease-in-out infinite reverse; */
@@ -124,12 +125,13 @@ svg {
     width: 100vw;
     height: 100vh;
     transition: 1s ease-in-out;
+    z-index: 5;
 }
 
 .x-close {
     font-size: 1em;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 15px;
     color: red;
     display: none;
     align-items: center;
@@ -137,9 +139,9 @@ svg {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 40px;
-    height: 40px;
+    padding: 0.6rem 0.8rem;
     cursor: pointer;
+    z-index: 8;
 }
 
 .final-heading {

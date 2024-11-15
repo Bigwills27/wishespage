@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle cassette click event
   cassette.addEventListener("click", () => {
+    cassette.style.display = "none !important";
     if (!headingsComplete) return; // Exit if headings haven't finished
 
     content.style.display = "none"; // Hide content section
@@ -63,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let finalHeadingIndex = 0;
 
   xClose.addEventListener("click", () => {
+    cassette.style.display = "flex";
     mainVid.pause();
     mainVid.style.display = "none";
     content.style.display = "flex";
